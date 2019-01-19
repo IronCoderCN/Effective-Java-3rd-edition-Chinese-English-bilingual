@@ -71,3 +71,12 @@ public class Test {
 In summary, interfaces should be used only to define types. They should not be used merely to export constants.
 
 总之，接口应该只用于定义类型。它们不应该用于导出常量。
+
+*****
+## Notes:
+接口应该是定义对外API的地方
+接口应该定义方法或者参数的签名（类型），不涉及具体实现（default方法除外）
+接口内方法的默认修饰符为public abstract，参数默认修饰符为public static final
+接口内不要定义常量
+使用工具类定义常量（工具类、枚举类）
+*****
