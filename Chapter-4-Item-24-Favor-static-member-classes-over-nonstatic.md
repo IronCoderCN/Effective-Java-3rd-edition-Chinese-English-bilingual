@@ -75,3 +75,4 @@ To recap, there are four different kinds of nested classes, and each has its pla
 # Notes:
 * 如果声明的成员类不需要访问外部的实例，那么（应）始终在声明中添加static修饰符，使其成为静态的而不是非静态的成员类
 * 匿名内部类实现接口或者继承类、不能包含静态成员或者方法
+* 匿名内部类为什么不可执行instanceof测试？
