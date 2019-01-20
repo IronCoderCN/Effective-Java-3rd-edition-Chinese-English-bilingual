@@ -71,3 +71,7 @@ Local classes are the least frequently used of the four kinds of nested classes.
 To recap, there are four different kinds of nested classes, and each has its place. If a nested class needs to be visible outside of a single method or is too long to fit comfortably inside a method, use a member class. If each instance of a member class needs a reference to its enclosing instance, make it nonstatic; otherwise, make it static. Assuming the class belongs inside a method, if you need to create instances from only one location and there is a preexisting type that characterizes the class, make it an anonymous class; otherwise, make it a local class.
 
 简单回顾一下，有四种不同类型的嵌套类，每一种都有自己的用途。如果嵌套的类需要在单个方法之外可见，或者太长，（不适合）放入方法中，则使用成员类。如果成员类的每个实例都需要引用其外部类实例，则使其非静态；否则，让它保持静态。假设（嵌套）类属于方法内部，如果您只需要从一个位置创建实例，并且存在一个（能够）描述类的现有类型，那么将其设置为匿名类；否则，将其设置为局部类。
+
+# Notes:
+* 如果声明的成员类不需要访问外部的实例，那么（应）始终在声明中添加static修饰符，使其成为静态的而不是非静态的成员类
+* 匿名内部类实现接口或者继承类、不能包含静态成员或者方法
